@@ -1,27 +1,23 @@
-# hexo-uglify
+# hexo-autoprefixer
 
-Minify JavaScript files with [UglifyJS].
+[Autoprefixer] plugin for Hexo.
 
 ## Installation
 
 ``` bash
-$ npm install hexo-uglify --save
+$ npm install hexo-autoprefixer --save
 ```
 
 ## Options
 
 ``` yaml
-uglify:
-  mangle: true
-  output:
-  compress:
+autoprefixer:
   exclude: 
     - *.min.js
 ```
 
-- **mangle**: Mangle file names
-- **output**: Output options
-- **compress**: Compress options
 - **exclude**: Exclude files
 
-[UglifyJS]: http://lisperator.net/uglifyjs/
+See <https://github.com/postcss/autoprefixer>
+
+[Autoprefixer]: https://github.com/postcss/autoprefixer
