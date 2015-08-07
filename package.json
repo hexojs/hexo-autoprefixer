@@ -1,6 +1,6 @@
 {
   "name": "hexo-autoprefixer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Autoprefixer plugin for Hexo.",
   "main": "index",
   "scripts": {
