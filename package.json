@@ -1,6 +1,6 @@
 {
   "name": "hexo-autoprefixer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Autoprefixer plugin for Hexo.",
   "main": "index",
   "scripts": {
@@ -20,12 +20,15 @@
     "autoprefixer"
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "contributors": [
+    "James J. Womack <james@womack.io>"
+  ],
   "license": "MIT",
   "dependencies": {
-    "autoprefixer-core": "^5.1.1",
+    "autoprefixer": "6.1.1",
     "minimatch": "^2.0.1",
     "object-assign": "^2.0.0",
-    "postcss": "^4.1.11"
+    "postcss": "5.0.12"
   },
   "devDependencies": {
     "chai": "^3.4.0",
