@@ -1,3 +1,7 @@
+/* global hexo */
+
+'use strict';
+
 var assign = require('object-assign');
 
 hexo.config.autoprefixer = assign({
