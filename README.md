@@ -1,5 +1,7 @@
 # hexo-autoprefixer
 
+[![Build Status](https://travis-ci.org/hexojs/hexo-autoprefixer.svg?branch=master)](https://travis-ci.org/hexojs/hexo-autoprefixer) [![npm version](https://badge.fury.io/js/hexo-autoprefixer.svg)](https://badge.fury.io/js/hexo-autoprefixer) [![Coverage Status](https://coveralls.io/repos/hexojs/hexo-autoprefixer/badge.svg?branch=master&service=github)](https://coveralls.io/github/hexojs/hexo-autoprefixer?branch=master)
+
 [Autoprefixer] plugin for Hexo.
 
 ## Installation
@@ -12,7 +14,7 @@ $ npm install hexo-autoprefixer --save
 
 ``` yaml
 autoprefixer:
-  exclude: 
+  exclude:
     - *.min.js
 ```
 
