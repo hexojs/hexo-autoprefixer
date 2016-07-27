@@ -12,10 +12,14 @@ $ npm install hexo-autoprefixer --save
 
 ## Options
 
+Configure Autoprefixer in your Hexo config.
+
 ``` yaml
 autoprefixer:
   exclude:
-    - *.min.js
+    - *.min.css
+  browsers:
+    - 'last 2 versions'
 ```
 
 - **exclude**: Exclude files
