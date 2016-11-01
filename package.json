@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "6.1.1",
-    "minimatch": "^2.0.1",
+    "minimatch": "^3.0.2",
     "object-assign": "^2.0.0",
     "postcss": "5.0.12"
   },
@@ -35,9 +35,9 @@
     "eslint": "^1.8.0",
     "eslint-config-hexo": "^1.0.2",
     "istanbul": "^0.4.0",
-    "jscs": "^2.5.0",
+    "jscs": "^3.0.7",
     "jscs-preset-hexo": "^1.0.1",
-    "mocha": "^2.3.3",
+    "mocha": "^3.1.2",
     "sinon": "^1.17.2"
   }
 }
