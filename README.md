@@ -17,7 +17,7 @@ Configure Autoprefixer in your Hexo config.
 ``` yaml
 autoprefixer:
   exclude:
-    - *.min.css
+    - '*.min.css'
   browsers:
     - 'last 2 versions'
 ```
