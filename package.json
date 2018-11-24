@@ -30,7 +30,6 @@
   "dependencies": {
     "autoprefixer": "9.3.1",
     "minimatch": "^3.0.2",
-    "object-assign": "^2.0.0",
     "postcss": "5.0.12"
   },
   "devDependencies": {

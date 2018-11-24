@@ -2,9 +2,7 @@
 
 'use strict';
 
-var assign = require('object-assign');
-
-hexo.config.autoprefixer = assign({
+hexo.config.autoprefixer = Object.assign({
   exclude: ['*.min.css']
 }, hexo.config.autoprefixer);
 
