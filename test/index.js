@@ -3,7 +3,7 @@
 var should = require('chai').should(); // eslint-disable-line
 var prefixer = require('../lib/filter');
 
-var nonStandards = [ '-webkit-', '-moz-' ];
+var nonStandards = ['-webkit-', '-moz-'];
 
 function makeCSS(prefix) {
   var isNS = nonStandards.indexOf(prefix) !== -1;
