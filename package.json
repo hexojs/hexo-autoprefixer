@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "9.4.0",
+    "autoprefixer": "9.4.2",
     "minimatch": "^3.0.2",
     "postcss": "7.0.6"
   },
