@@ -18,18 +18,18 @@
     "css",
     "autoprefixer"
   ],
-  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",  
+  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
     "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"
-    ],
+  ],
   "contributors": [
     "James J. Womack <james@womack.io>"
   ],
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "9.4.3",
+    "autoprefixer": "^9.4.3",
     "minimatch": "^3.0.2",
-    "postcss": "7.0.7"
+    "postcss": "^7.0.7"
   },
   "devDependencies": {
     "chai": "^4.2.0",
