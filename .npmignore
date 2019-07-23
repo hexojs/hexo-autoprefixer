@@ -1,6 +1,0 @@
-test/
-tmp/
-coverage/
-*.log
-.travis.yml
-.idea/
