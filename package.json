@@ -32,7 +32,7 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^9.4.3",
-    "minimatch": "^3.0.2",
+    "micromatch": "^4.0.2",
     "postcss": "^7.0.7"
   },
   "devDependencies": {
