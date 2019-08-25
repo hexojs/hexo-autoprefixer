@@ -1,17 +1,10 @@
 'use strict';
 
-var should = require('chai').should(); // eslint-disable-line
+require('chai').should();
 var prefixer = require('../lib/filter');
 
-var nonStandards = ['-webkit-', '-moz-'];
-
-function makeCSS(prefix) {
-  var isNS = nonStandards.indexOf(prefix) !== -1;
-
-  return ':%s%d div { color: white;  }'
-    .replace('%s', prefix || '')
-    .replace('%d', isNS ? 'full-screen' : 'fullscreen');
-}
+const unprefixed = 'div { user-select: none; }';
+const prefixed = 'div { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }';
 
 describe('hexo-autoprefixer', function() {
   it('should prefix fullscreen with no excludes', function() {
@@ -22,12 +15,11 @@ describe('hexo-autoprefixer', function() {
         }
       }
     };
-    var unprefixed = makeCSS();
     var newCSS = prefixer.call(ctx, unprefixed, {
       path: '/usr/foo/bar/baz.css'
     });
 
-    ['-webkit-', '-moz-', '-ms-'].map(makeCSS).concat(unprefixed).join('\n').should.eql(newCSS);
+    newCSS.should.eql(prefixed);
   });
 
   it('should prefix fullscreen with string exclude', function() {
@@ -38,12 +30,11 @@ describe('hexo-autoprefixer', function() {
         }
       }
     };
-    var unprefixed = makeCSS();
     var newCSS = prefixer.call(ctx, unprefixed, {
       path: '/usr/foo/bar/baz.css'
     });
 
-    ['-webkit-', '-moz-', '-ms-'].map(makeCSS).concat(unprefixed).join('\n').should.eql(newCSS);
+    newCSS.should.eql(prefixed);
   });
 
   it('should not prefix fullscreen with exclude match', function() {
@@ -54,11 +45,10 @@ describe('hexo-autoprefixer', function() {
         }
       }
     };
-    var unprefixed = makeCSS();
     var newCSS = prefixer.call(ctx, unprefixed, {
       path: '/usr/baz.styl'
     });
 
-    unprefixed.should.eql(newCSS);
+    newCSS.should.eql(unprefixed)
   });
 });
