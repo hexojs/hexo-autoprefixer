@@ -49,6 +49,6 @@ describe('hexo-autoprefixer', function() {
       path: '/usr/baz.styl'
     });
 
-    newCSS.should.eql(unprefixed)
+    newCSS.should.eql(unprefixed);
   });
 });
