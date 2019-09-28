@@ -36,19 +36,4 @@ describe('hexo-autoprefixer', function() {
 
     newCSS.should.become(prefixed);
   });
-
-  it('should not prefix fullscreen with exclude match', function() {
-    var ctx = {
-      config: {
-        autoprefixer: {
-          exclude: '/**/*.styl'
-        }
-      }
-    };
-    var newCSS = prefixer.call(ctx, unprefixed, {
-      path: '/usr/baz.styl'
-    });
-
-    newCSS.should.become(unprefixed);
-  });
 });
