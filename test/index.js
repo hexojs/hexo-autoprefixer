@@ -7,8 +7,8 @@ const unprefixed = 'div { user-select: none; }';
 const prefixed = 'div { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }';
 
 describe('hexo-autoprefixer', () => {
-  it('should prefix fullscreen with no excludes', () => {
-    const ctx = {
+  it('should prefix user-select with no excludes', () => {
+    var ctx = {
       config: {
         autoprefixer: {
           exclude: null
@@ -22,8 +22,8 @@ describe('hexo-autoprefixer', () => {
     newCSS.should.become(prefixed);
   });
 
-  it('should prefix fullscreen with string exclude', () => {
-    const ctx = {
+  it('should prefix user-select with string exclude', () => {
+    var ctx = {
       config: {
         autoprefixer: {
           exclude: '*.styl'
@@ -35,5 +35,35 @@ describe('hexo-autoprefixer', () => {
     });
 
     newCSS.should.become(prefixed);
+  });
+
+  it('should not prefix - exclude match', () => {
+    const ctx = {
+      config: {
+        autoprefixer: {
+          exclude: '*.styl'
+        }
+      }
+    };
+    const newCSS = prefixer.call(ctx, unprefixed, {
+      path: '/usr/baz.styl'
+    });
+
+    newCSS.should.become(unprefixed);
+  });
+
+  it('should not prefix - exclude with slash', () => {
+    const ctx = {
+      config: {
+        autoprefixer: {
+          exclude: '/**/*.styl'
+        }
+      }
+    };
+    const newCSS = prefixer.call(ctx, unprefixed, {
+      path: '/foo/bar/baz.styl'
+    });
+
+    newCSS.should.become(unprefixed);
   });
 });
