@@ -8,7 +8,7 @@ const prefixed = 'div { -webkit-user-select: none; -moz-user-select: none; -ms-u
 
 describe('hexo-autoprefixer', () => {
   it('should prefix user-select with no excludes', () => {
-    var ctx = {
+    const ctx = {
       config: {
         autoprefixer: {
           exclude: null
@@ -23,7 +23,7 @@ describe('hexo-autoprefixer', () => {
   });
 
   it('should prefix user-select with string exclude', () => {
-    var ctx = {
+    const ctx = {
       config: {
         autoprefixer: {
           exclude: '*.styl'
