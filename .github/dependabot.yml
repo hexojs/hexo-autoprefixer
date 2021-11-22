@@ -4,19 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 20
-  versioning-strategy: widen
-  ignore:
-  - dependency-name: postcss
-    versions:
-    - 8.2.10
-    - 8.2.12
-    - 8.2.4
-    - 8.2.5
-    - 8.2.6
-    - 8.2.7
-    - 8.2.8
-    - 8.2.9
-  - dependency-name: sinon
-    versions:
-    - 10.0.0
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
