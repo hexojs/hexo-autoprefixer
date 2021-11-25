@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "eslint .",
     "test": "mocha test/index.js",
-    "test-cov": "nyc npm run test"
+    "test-cov": "nyc --reporter=lcovonly npm test"
   },
   "directories": {
     "lib": "./lib"
@@ -45,6 +45,6 @@
     "sinon": "^9.0.2"
   },
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=12"
   }
 }
