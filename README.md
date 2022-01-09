@@ -20,11 +20,11 @@ Configure Autoprefixer in your Hexo config.
 autoprefixer:
   exclude:
     - '*.min.css'
-  browsers:
-    - 'last 2 versions'
 ```
 
 - **exclude**: Exclude files
+
+In `hexo-autoprefixer@2.0.0` please specify `browser` option in `package.json` or `.browserslistrc` instead of `_config.yaml`. Please see [Browserslist: Config file](https://github.com/browserslist/browserslist#config-file).
 
 See <https://github.com/postcss/autoprefixer>
 
