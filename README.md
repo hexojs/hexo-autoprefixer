@@ -1,6 +1,6 @@
 # hexo-autoprefixer
 
-[![Build Status](https://travis-ci.com/hexojs/hexo-autoprefixer.svg?branch=master)](https://travis-ci.com/hexojs/hexo-autoprefixer)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/hexojs/hexo-autoprefixer/tester.yml?branch=master&label=test)](https://github.com/hexojs/hexo-autoprefixer/actions?query=workflow%3ATester)
 [![npm version](https://badge.fury.io/js/hexo-autoprefixer.svg)](https://www.npmjs.com/package/hexo-autoprefixer)
 [![Coverage Status](https://coveralls.io/repos/hexojs/hexo-autoprefixer/badge.svg?branch=master&service=github)](https://coveralls.io/github/hexojs/hexo-autoprefixer?branch=master)
 
